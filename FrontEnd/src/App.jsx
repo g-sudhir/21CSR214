@@ -22,7 +22,7 @@ function App() {
               }
 
               const jsonData = await response.json();
-              setData(jsonData);
+              setData(jsonData.numbers);
               console.log(data);
           } catch (error) {
               console.error('Fetch error:', error);
