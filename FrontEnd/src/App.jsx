@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [data, setData] = useState();
+  const [data, setData] = useState([]);
   function api(){
   useEffect(() => {
       const fetchData = async () => {
@@ -12,7 +12,7 @@ function App() {
               const response = await fetch('http://20.244.56.144/test/primes', {
                   method: 'GET',
                   headers: {
-                      'Authorization': `Bearer ${eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzE4NjkxNzY5LCJpYXQiOjE3MTg2OTE0NjksImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6IjA0MTA3NDcyLWQwNzEtNDcyYy05MjVmLTQ4ZTJhYTgwN2EyMCIsInN1YiI6InN1ZGhpcmcuMjFjc2VAa29uZ3UuZWR1In0sImNvbXBhbnlOYW1lIjoiZ29NYXJ0IiwiY2xpZW50SUQiOiIwNDEwNzQ3Mi1kMDcxLTQ3MmMtOTI1Zi00OGUyYWE4MDdhMjAiLCJjbGllbnRTZWNyZXQiOiJxbVZkRWdkRlR1bFBsVWliIiwib3duZXJOYW1lIjoiU3VkaGlyIiwib3duZXJFbWFpbCI6InN1ZGhpcmcuMjFjc2VAa29uZ3UuZWR1Iiwicm9sbE5vIjoiMjFDU1IyMTQifQ.HAz3qiNcgYfWQ_UNajC141k04JvEsRyo9Tr-P5LCtiI}`,
+                      'Authorization': `Bearer ${eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzE4NjkyMjM5LCJpYXQiOjE3MTg2OTE5MzksImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6IjA0MTA3NDcyLWQwNzEtNDcyYy05MjVmLTQ4ZTJhYTgwN2EyMCIsInN1YiI6InN1ZGhpcmcuMjFjc2VAa29uZ3UuZWR1In0sImNvbXBhbnlOYW1lIjoiZ29NYXJ0IiwiY2xpZW50SUQiOiIwNDEwNzQ3Mi1kMDcxLTQ3MmMtOTI1Zi00OGUyYWE4MDdhMjAiLCJjbGllbnRTZWNyZXQiOiJxbVZkRWdkRlR1bFBsVWliIiwib3duZXJOYW1lIjoiU3VkaGlyIiwib3duZXJFbWFpbCI6InN1ZGhpcmcuMjFjc2VAa29uZ3UuZWR1Iiwicm9sbE5vIjoiMjFDU1IyMTQifQ.tyZsqNrK5nPB_mPvhgra_0Xq4ZT5WctMCdYUY58KA7Y}`,
                       'Content-Type': 'application/json'
                   }
               });
